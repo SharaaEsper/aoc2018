@@ -27,9 +27,9 @@ func main() {
 			} else if op == "-" {
 				freq = freq - val
 			}
-		if _,exists := prevvalues[freq]; exists {
-			matched = true
-			break
+			if _,exists := prevvalues[freq]; exists {
+				matched = true
+				break
 			} else {
 				prevvalues[freq] = freq
 			}
