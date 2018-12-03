@@ -10,9 +10,9 @@ import (
 
 func main() {
 
-	cloth := make([][]string,1100)
+	cloth := make([][]string,1000)
 	for y := range cloth {
-		cloth[y] = make([]string,1100)
+		cloth[y] = make([]string,1000)
 	}
 
 	f, err := os.Open("input")
@@ -45,7 +45,6 @@ func main() {
 
 
 	}
-	fmt.Println("foo")
 	_, err = f.Seek(0, 0)
 	if err != nil {
 		fmt.Print(err)
